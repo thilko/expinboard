@@ -1,6 +1,7 @@
-# Expinboard
+# expinboard
 
-**TODO: Add description**
+An elixir client for the [pinboard.in api](https://pinboard.in/api/).
+
 
 ## Installation
 
@@ -17,3 +18,11 @@ If [available in Hex](https://hex.pm/docs/publish), the package can be installed
         def application do
           [applications: [:expinboard]]
         end
+
+## Usage
+
+### Fetch all bookmarks
+
+´´´elixir
+
+´´´
