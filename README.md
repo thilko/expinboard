@@ -23,7 +23,7 @@ If [available in Hex](https://hex.pm/docs/publish), the package can be installed
 
 ### Fetch all bookmarks
 
-´´´
+´´´elixir
 bookmarks = Pinboard.all "your_api_token"
 ["http://chimera.labs.oreilly.com/books/1234000001642/ch05.html",
  "https://github.com/lukehoban/es6features/blob/master/README.md",
