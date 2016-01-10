@@ -7,6 +7,8 @@ defmodule Expinboard.Mixfile do
      elixir: "~> 1.1",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
+     description: description,
+     package: package,
      deps: deps]
   end
 
@@ -15,6 +17,21 @@ defmodule Expinboard.Mixfile do
   # Type "mix help compile.app" for more information
   def application do
     [applications: [:logger]]
+  end
+
+  defp package do
+    [
+     files: ["lib", "mix.exs", "README*", "UNLICENSE"],
+     maintainers: ["Thilko Richter"],
+     licenses: ["Apache 2.0"],
+     links: %{"GitHub" => "https://github.com/thilko/expinboard",
+              "Docs" => "https://github.com/thilko/expinboard"}]
+  end
+
+  defp description do
+    """
+    A simple elixir pinboard client.
+    """
   end
 
   # Dependencies can be Hex packages:
