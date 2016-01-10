@@ -1,0 +1,2 @@
+defmodule Expinboard do
+end
